@@ -1,0 +1,35 @@
+body{
+background:rgb(55,67,117) ;
+font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: #FFFCF5;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.364);
+    margin-bottom: 22px;
+}
+footer{
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+#adicionar-tarefas{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+#digitar-tarefa{
+    width: 750px;
+}
+.itens{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
