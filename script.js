@@ -4,7 +4,7 @@ const listatarefas = document.querySelector("#lista-tarefas")
 
 const adicionartarefa = () => {
     if (inserir.value.trim() === "") return;
-    listatarefas.style.background = "white"
+    listatarefas.style.background = "white";
 
     const item = document.createElement("li");
     const verificar = document.createElement("input");
@@ -20,8 +20,16 @@ const adicionartarefa = () => {
     item.appendChild(conteudo);
     item.appendChild(botaoremove);
 
+    const removertarefa = () =>{
+        item.remove();
+        if (listatarefas && listatarefas.children.length == 0) {
+            listatarefas.style.background = "rgb(55,67,117)";
+        };
+    };
+    botaoremove.addEventListener("click", removertarefa );
     listatarefas.appendChild(item);
 
+  
     inserir.value = "";
 };
 
