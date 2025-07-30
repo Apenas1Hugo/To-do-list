@@ -1,70 +1,71 @@
-body{
-background:rgb(55,67,117) ;
-font: normal 15pt Arial;
+body {
+  background: rgb(55, 67, 117);
+  font: normal 15pt Arial;
 }
-header{
-    color: white;
-    text-align: center;
+header {
+  color: white;
+  text-align: center;
 }
-section{
-    background: #FFFCF5;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.364);
-    margin-bottom: 22px;
+section {
+  background: #fffcf5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.364);
+  margin-bottom: 22px;
 }
-footer{
-    font-style: italic;
-    color: white;
-    text-align: center;
+footer {
+  font-style: italic;
+  color: white;
+  text-align: center;
 }
-#adicionar-tarefas{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
+#adicionar-tarefas {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
-#digitar-tarefa{
-    width: 750px;
+#digitar-tarefa {
+  width: 750px;
 }
-#btninserir{
-    cursor: pointer;
-}
-
-ul{
-    background: rgb(55,67,117) ;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
+#btninserir {
+  cursor: pointer;
 }
 
-li{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    margin-bottom: 10px;
+ul {
+  background: rgb(55, 67, 117);
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 li span {
-    flex-grow: 1;
-    margin-left: 5px;
-    position: relative;
+  flex-grow: 1;
+  margin-left: 5px;
+  position: relative;
 }
 li span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px; 
-    width: 0;
-    height: 1px;
-    background-color: rgb(55,67,117); 
-    transition: width 0.4s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: rgb(55, 67, 117);
+  transition: width 0.4s ease-in-out;
 }
 li span:hover::after {
-    width: 100%;
+  width: 100%;
 }
-input[type= "checkbox"], button{
-    cursor: pointer;
+input[type="checkbox"],
+button {
+  cursor: pointer;
 }
